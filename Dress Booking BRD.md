@@ -88,7 +88,6 @@ The development of a dedicated web application for LUXURIOUS BRIDE presents a si
 The proposed solution is a dedicated web application for LUXURIOUS BRIDE, designed to streamline the client inquiry process for photo taking sessions and centralize the management of all services, including in-shop dress rentals and requests received via other channels like **WhatsApp or Instagram DMs**. This web-based platform will feature a public-facing portal where clients can directly view photo session availability via an interactive calendar and submit a request by filling out a simple form. Dress rentals will continue to be booked in-person at the shop. For LUXURIOUS BRIDE administrators, the system will include an integrated backend interface to manage photo session services, process incoming web-submitted requests, manually input and manage requests received from **Instagram DMs or WhatsApp**, register clients, confirm photo session bookings, manage dress inventory and in-shop dress bookings, oversee booking calendars for all services, and handle client communications. The primary goal is to provide a sophisticated and convenient initial request experience for photo session clients through the web portal, and a robust, efficient internal management system for all LUXURIOUS BRIDE services, reflecting the premium nature of the brand while significantly improving operational efficiency and data management. The entire application (client-facing and admin) will support Arabic and English, with Arabic as the default. All financial references (e.g., rental fees) will be managed in OMR.
 
 ### 3.2. Key Features (High-Level)
-*(No direct change here, as the app itself doesn't integrate with Instagram. The admin portal's ability to manually create bookings covers this. The problem it solves is now broader.)*
 *   **1. Client-Facing Photo Session Request Portal:**
     *   Publicly accessible landing page showcasing photo session services.
     *   Interactive calendar displaying real-time availability for photo sessions.
@@ -124,13 +123,11 @@ The proposed solution is a dedicated web application for LUXURIOUS BRIDE, design
 *   **Objective 3: Facilitate Accurate Booking Management & Support Business Growth:** To support an increase in accurately managed and fulfilled service bookings (photo sessions and dress rentals combined) by 15% within 12 months post-launch, by making photo session requests more accessible via the web portal and overall service management (including manually entered requests) more robust.
 
 ### 4.2. Secondary Objectives
-*(No direct change needed here, but the impact is amplified by consolidating more diverse manual channels.)*
 *   **Objective 1: Strengthen Brand Image:** To elevate the LUXURIOUS BRIDE brand perception by offering a sophisticated, modern, and reliable online request platform for photo sessions and a well-organized backend for all services, consistent with its premium market positioning.
 *   **Objective 2: Improve Data Accuracy and Insights:** To establish a centralized system for accurate capture and management of booking data (for photo sessions and dress rentals, regardless of original inquiry source), client information, and service performance, enabling better-informed business decisions and identification of trends.
 *   **Objective 3: Reduce Booking Errors & Miscommunications:** To minimize errors (e.g., double bookings for photo sessions) and miscommunications associated with the current manual processes across multiple channels, leading to improved resource allocation and client satisfaction.
 
 ### 4.3. Success Metrics / KPIs
-*(Minor adjustments to reflect the multiple manual channels)*
 *   **KPI 1: Reduction in Administrative Time for Photo Session Processing:**
     *   Average time (e.g., in minutes) spent by staff processing a photo session request (from initial contact on any channel to system confirmation) (pre-app vs. post-app).
     *   Number of manual follow-ups or corrections required per photo session booking.
@@ -156,7 +153,6 @@ The proposed solution is a dedicated web application for LUXURIOUS BRIDE, design
 ## 5. Project Scope
 
 ### 5.1. In Scope
-*(Added a note in Admin-Facing section for manual entry)*
 *   **Web Application Development (Client-Facing - Primarily for Photo Session Requests):**
     *   Development of a responsive web application accessible via standard web browsers (desktop and mobile).
     *   User interface (UI) and user experience (UX) design for client-facing pages.
@@ -192,7 +188,6 @@ The proposed solution is a dedicated web application for LUXURIOUS BRIDE, design
     *   Basic training for administrators.
 
 ### 5.2. Out of Scope
-*(No direct change needed here, but the app's non-integration with Instagram/WhatsApp is reinforced)*
 *   **Direct automated integration with Instagram DMs or WhatsApp for request intake.** (Requests from these channels will be manually entered by admins).
 *   **Client Self-Registration/Client Accounts (for initial photo session request):** Clients do not create accounts to request a photo session. Account creation is admin-initiated post-request.
 *   **Online Payments / Payment Gateway Integration:** All payments are handled offline. The system will not process online transactions.
@@ -211,12 +206,21 @@ The proposed solution is a dedicated web application for LUXURIOUS BRIDE, design
 *   **Advanced user role management beyond a single 'Administrator' type.**
 
 ### 5.3. Deliverables
-*(No change needed)*
+*   A fully functional and deployed LUXURIOUS BRIDE web application (client-facing request portal and admin management portal) as per the "In Scope" requirements, supporting English and Arabic (both client-side and admin-side).
+*   Source code for the developed web application.
+*   This Business Requirements Document (BRD) - final version.
+*   UI/UX design mockups or prototypes (if developed as distinct artifacts).
+*   Basic user documentation (e.g., a short guide or walkthrough) for administrators on how to use the admin portal.
+*   Test plans and summary test reports from UAT.
 
 ---
 
 ## 6. Stakeholders
-*(No change needed)*
+*   **Tasneem Al Shaybia:** Project Owner; Provides final say on requirements, features, and user experience priorities from a business perspective. Champions the project within LUXURIOUS BRIDE.
+*   **Ghanim Al Marzouqi:** Project Manager & Lead Developer; Responsible for project planning, execution, development, technical decisions, and ensuring deliverables meet requirements.
+*   **LUXURIOUS BRIDE Ownership/Management:** Project Sponsor; Provides overall business direction, funding, and ultimate approval. Interested in ROI, operational efficiency, brand enhancement, and business growth.
+*   **LUXURIOUS BRIDE Staff (Administrators/Booking Coordinators):** Primary Users (Admin Portal); Responsible for managing requests, bookings, client communication, and inventory. Their feedback is crucial for usability and efficiency.
+*   **Prospective Clients (Requesting Photo Sessions):** Primary Users (Client-Facing Portal); Their experience on the public-facing site is key to lead generation. Interested in easily viewing availability and submitting photo session requests.
 
 ---
 
@@ -225,7 +229,6 @@ The proposed solution is a dedicated web application for LUXURIOUS BRIDE, design
 ### 7.1. Functional Requirements
 
 #### 7.1.1. User Roles & Personas
-*(Minor update to Admin goals)*
 *   **User Role 1: Prospective Client (Guest User)**
     *   Description: An individual visiting the LUXURIOUS BRIDE website to inquire about photo taking sessions. Does not have an account.
     *   Goals: To easily view available dates/times for photo sessions, understand service offerings (with fees in OMR), and submit a request for a photo session without needing to create an account. To receive clear feedback that their request has been submitted.
@@ -237,7 +240,6 @@ The proposed solution is a dedicated web application for LUXURIOUS BRIDE, design
     *   Goals: To efficiently manage all incoming photo session requests from the web portal and easily input requests received via **Instagram DMs/WhatsApp**, maintain an accurate booking calendar for all services, manage dress inventory effectively (including uploading images to Firebase Storage), register clients with necessary details, confirm bookings, communicate with clients, and ensure a smooth operational workflow with minimal errors. To switch interface language between Arabic and English.
 
 #### 7.1.2. User Stories / Use Cases
-*(Added a User Story for admin manual entry)*
 *   **Client-Facing (Photo Session Request Portal):**
     *   **FR-001:** As a Prospective Client, I want to view a calendar showing available time slots for photo sessions, so that I can choose a convenient time for my request.
     *   **FR-002:** As a Prospective Client, I want to easily switch the website language between Arabic and English, so that I can view information in my preferred language.
@@ -263,25 +265,74 @@ The proposed solution is a dedicated web application for LUXURIOUS BRIDE, design
     *   **FR-021:** As an Administrator, I want to mark a photo session or dress booking as completed or cancelled, so the records are accurate.
 
 ### 7.2. Non-Functional Requirements
-*(No changes needed here for this update)*
+
+#### 7.2.1. Performance
+*   Client-facing photo session request page and calendar should load interactively within 3-4 seconds on a typical consumer internet connection (e.g., 10 Mbps).
+*   Admin dashboard pages should load within 4-5 seconds. Database queries for lists (requests, bookings, clients) should return results within 3 seconds for typical data volumes.
+*   The system should support at least 50 concurrent anonymous users browsing the client-facing portal and 5-10 concurrent administrators using the backend without significant performance degradation.
+
+#### 7.2.2. Scalability
+*   The system architecture should allow for an increase in the number of services, clients, and bookings by at least 100% over the next 2 years without requiring major re-architecture.
+*   The database schema should be designed to accommodate growth in data volume without significant performance loss on key queries.
+*   Ability to add new informational pages or modify existing service descriptions without significant development effort (e.g., through an admin interface or simple content updates).
+
+#### 7.2.3. Usability / User Experience (UX)
+*   **Client-Facing:** The photo session request process must be intuitive, requiring minimal steps (ideally 2-3 steps from landing page to request submission) and clear instructions. A first-time user should be able to submit a request easily without confusion. Clear visual cues for available vs. booked slots on the calendar.
+*   **Admin Portal:** The admin interface must be organized logically, with clear navigation and workflows. Staff should be able to perform key tasks (manage requests, bookings, inventory, manually enter DM/WhatsApp requests) efficiently with minimal training (e.g., after a 1-2 hour walkthrough).
+*   Error messages (e.g., for form validation) must be clear, user-friendly (in both Arabic and English), specific, and guide the user on corrective action.
+*   The web application must be responsive and provide a consistent and good user experience on common desktop screen resolutions (e.g., 1366x768 and above) and popular mobile/tablet screen sizes (e.g., iPhone, Samsung Galaxy, iPad).
+*   Both Arabic (RTL) and English (LTR) interfaces must be correctly rendered and easy to use. Font selection should ensure readability in both languages.
+
+#### 7.2.4. Security
+*   All data transmission between the client/admin browsers and the server must use HTTPS.
+*   Admin access must be protected by strong authentication via Firebase Authentication (username/password or social providers if configured), with password complexity rules enforced and secure password storage (hashing and salting).
+*   The application must implement measures to protect against common web vulnerabilities as per OWASP Top 10 (e.g., XSS, SQL Injection, CSRF if applicable).
+*   Client contact information and any personal data must be handled securely, stored appropriately, and accessed only by authorized administrators.
+*   Regular security patching of server-side software and dependencies. Secure configuration of Firebase services (Authentication, Storage rules).
+
+#### 7.2.5. Reliability & Availability
+*   The web application should aim for an uptime of 99.8%, excluding scheduled maintenance windows.
+*   Automated data backup procedures should be in place for the PostgreSQL database (e.g., daily backups) with a defined recovery point objective (RPO) and recovery time objective (RTO). Firebase services have their own reliability measures.
+*   Scheduled maintenance should be planned for off-peak hours (e.g., late night/early morning local time) with prior notification to administrators if significant downtime is expected.
+
+#### 7.2.6. Maintainability
+*   Code (React, NestJS) should be well-commented, follow consistent coding standards and naming conventions (e.g., Airbnb style guide for JavaScript/TypeScript, NestJS conventions), and be organized logically (e.g., feature-based modules) to facilitate future updates and bug fixes.
+*   The application should be designed in a modular fashion where feasible, to isolate components and reduce interdependencies.
+*   Configuration settings (e.g., for notification templates, admin email addresses, basic service parameters, Firebase config) should be manageable via environment variables or configuration files rather than hardcoding.
+*   Version control (Git) must be used for all source code.
+*   Prisma ORM migrations should be used for managing database schema changes.
+
+#### 7.2.7. Compatibility (Platforms, Devices, Browsers)
+*   The web application must be compatible with the latest two stable versions of major web browsers: Google Chrome, Mozilla Firefox, Apple Safari, and Microsoft Edge.
+*   The responsive design using Tailwind CSS should ensure core functionality and usability across a range of common screen sizes for desktops, popular tablets (iOS and Android), and popular smartphones (iOS and Android).
 
 ### 7.3. Data Requirements
-*(Minor clarification for client data source)*
 *   **Prospective Client Request Data:** Full name, email address, phone number, preferred date/time for photo session, notes, source of request (Web Portal, Instagram DM, WhatsApp).
 *   **Registered Client Data:** Unique Client ID, full name, email address, phone number, registration date, communication preferences (e.g., consent for WhatsApp), internal notes.
-*   **Photo Session Service Data:** Service ID, name (Arabic/English), description (Arabic/English), duration, included items, internal notes.
+*   **Photo Session Service Data:** Service ID, name (Arabic/English), description (Arabic/English), duration, included items, internal notes, image URLs (Firebase Storage).
 *   **Photo Session Booking Data:** Booking ID, Client ID, Service ID, confirmed date/time, status (e.g., Confirmed, Completed, Cancelled), creation date, admin notes.
-*   **Dress Data:** Dress ID (unique), name/description (Arabic/English), size, color, high-quality images (multiple angles), rental fee (in OMR for reference), current status (Available, Booked, Maintenance, Cleaning), acquisition date, internal notes.
+*   **Dress Data:** Dress ID (unique), name/description (Arabic/English), size, color, high-quality image URLs (Firebase Storage - multiple angles), rental fee (in OMR for reference), current status (Available, Booked, Maintenance, Cleaning), acquisition date, internal notes.
 *   **Dress Booking Data:** Dress Booking ID, Client ID, Dress ID, rental start date, rental end date, advance payment status (e.g., Paid/Unpaid/Amount), actual return date, booking status (e.g., Confirmed, Active, Completed, Cancelled), admin notes.
-*   **Admin User Data:** User ID, username, hashed password, role (Administrator), language preference.
+*   **Admin User Data:** Firebase User ID (UID), display name, email, role (Administrator), language preference.
 *   All textual data requiring localization (e.g., service names, descriptions) must support storage for both Arabic and English.
-*   Data to be stored in a relational database (PostgreSQL).
+*   Data to be stored in PostgreSQL.
 
 ### 7.4. Reporting Requirements
-*(No changes needed here for this update)*
+*   **Admin Dashboard Widgets:**
+    *   Count of new photo session requests today/this week (distinguishing web vs. manual entry).
+    *   List of upcoming photo sessions for the next 7 days.
+    *   List of dress rentals due for return in the next 7 days.
+    *   Alert for dresses overdue for return.
+*   **Basic Reports (viewable/exportable if possible, e.g., to CSV):**
+    *   List of all photo session bookings within a date range, filterable by status and source.
+    *   List of all dress rentals within a date range, filterable by status.
+    *   Basic client list with contact details.
+    *   Dress inventory list with current status.
 
 ### 7.5. Regulatory/Compliance Requirements
-*(No changes needed here for this update)*
+*   Adherence to local data privacy laws (e.g., Oman's Personal Data Protection Law if applicable, concerning the collection, storage, consent, and use of client personal information). A basic privacy policy link may be required on the client-facing site.
+*   If WhatsApp Business API is used, strict adherence to WhatsApp's Business and Commerce Policies, including obtaining explicit, opt-in consent for sending proactive/transactional messages. Template messages must be pre-approved by WhatsApp.
+*   Compliance with Firebase terms of service, including data handling and security best practices for Firebase Authentication and Storage.
 
 ---
 
@@ -295,27 +346,26 @@ The proposed solution is a dedicated web application for LUXURIOUS BRIDE, design
 *   Access to and cooperation for integrating with a WhatsApp Business API provider will be available and feasible if direct API integration for notifications is pursued. If not, admins will handle WhatsApp communication manually guided by system information.
 *   The business has clear, existing internal processes for handling payments offline and managing physical dress handovers/returns.
 *   Staff are willing and able to be trained on the new system.
+*   Firebase services (Authentication, Storage) will meet the project's needs for scale and reliability for the MVP.
 
 ### 8.2. Constraints
-*(The technology stack information has been moved here for clarity and consistency)*
 *   **Budget:** [To be specified by LUXURIOUS BRIDE Ownership/Management, e.g., The project has an allocated budget of X OMR for MVP development.]
 *   **Timeline:** [To be specified by LUXURIOUS BRIDE Ownership/Management, e.g., The MVP is targeted for launch within Y months from project commencement.]
 *   **Resources (Development):** Development primarily relies on Ghanim Al Marzouqi. Additional specialized resources (e.g., for complex UX/UI design for Arabic) may need to be considered or outsourced if required.
-*   **Technology Stack (Initial):**
-    *   **Frontend:** React (likely with React Router v7) + TypeScript
+*   **Technology Stack (Defined for Initial Development):**
+    *   **Frontend:** React (using React Router v7 for routing) + TypeScript
     *   **UI Framework:** Tailwind CSS
     *   **Database:** PostgreSQL
     *   **Backend:** NestJS + Prisma ORM
-    *   **Authentication:** Firebase Authentication (integrated with NestJS for admin portal)
-    *   **File Upload/Download:** Firebase Storage (integrated with NestJS for images)
+    *   **Authentication (Admin Portal):** Firebase Authentication (integrated with NestJS)
+    *   **File Management (Images):** Firebase Storage (integrated with NestJS)
 *   **No Online Payments (MVP):** The system will not integrate any payment gateways for V1. All financial transactions are handled offline. Default currency for display/reference is OMR.
 *   **Dress Booking Process (MVP):** Dress bookings are finalized in-person at the shop; the web app only supports admin management of these bookings and related inventory.
-*   **No direct integration for automated intake from Instagram DMs or WhatsApp.**
+*   **No direct integration for automated intake from Instagram DMs or WhatsApp.** Requests from these channels require manual admin entry.
 
 ---
 
 ## 9. Risks & Mitigation Strategies
-*(No changes needed here for this update, though the manual entry reinforces Risk 5 if not done efficiently)*
 
 ### 9.1. Identified Risks
 *   **Risk 1: Scope Creep:** Requests for features outside the defined MVP (e.g., online payments, client self-service for dress bookings, advanced reporting, direct Instagram/WhatsApp integration) during development.
@@ -324,30 +374,57 @@ The proposed solution is a dedicated web application for LUXURIOUS BRIDE, design
     *   *Likelihood: Medium, Impact: Medium*
 *   **Risk 3: WhatsApp Business API Complexity/Cost:** Challenges with WhatsApp Business API integration (technical, policy approval) or unexpected costs associated with its use for outgoing notifications.
     *   *Likelihood: Medium, Impact: Medium*
-*   **Risk 4: Bilingual Implementation Challenges:** Underestimation of complexity for robust bilingual (Arabic/English) implementation, especially regarding UI/UX for right-to-left (RTL) layout, date/time formats, and testing.
+*   **Risk 4: Bilingual Implementation Challenges:** Underestimation of complexity for robust bilingual (Arabic/English) implementation, especially regarding UI/UX for right-to-left (RTL) layout, date/time formats, and testing with the chosen tech stack.
     *   *Likelihood: Medium, Impact: Medium*
 *   **Risk 5: Staff Adoption & Training:** LUXURIOUS BRIDE staff resistance to change or insufficient training leading to low adoption or incorrect/inefficient use of the admin portal, especially for manual entry of DM/WhatsApp requests.
-    *   *Likelihood: Medium, Impact: Medium* (Increased likelihood slightly due to manual entry aspect)
+    *   *Likelihood: Medium, Impact: Medium*
 *   **Risk 6: Key Person Dependency:** Heavy reliance on Ghanim Al Marzouqi for both project management and development could create a bottleneck or risk if availability is impacted.
     *   *Likelihood: Medium, Impact: High*
+*   **Risk 7: Firebase Integration/Limitations:** Unexpected limitations or complexities with Firebase Authentication or Storage integration, or future cost implications at scale.
+    *   *Likelihood: Low, Impact: Medium*
 
 ### 9.2. Mitigation Plans
 *   **For Risk 1:** Strict adherence to the defined scope in this BRD. Implement a formal change request process for any deviations. Prioritize MVP features. Regular stakeholder meetings with Tasneem Al Shaybia to manage expectations.
 *   **For Risk 2:** Establish clear content delivery schedules and formats with LUXURIOUS BRIDE early in the project. Provide templates or guidelines for content. Use placeholder content during development if necessary but highlight impact.
 *   **For Risk 3:** Thoroughly research WhatsApp Business API provider options, policies, and costs early. Design the system to allow for manual WhatsApp notifications based on system alerts as a fallback if API integration is delayed or unfeasible for MVP.
-*   **For Risk 4:** Allocate sufficient time for design, development, and thorough testing of bilingual features. Utilize established libraries/frameworks that support internationalization (i18n) and RTL. Consider engaging a UX consultant with Arabic language expertise if needed.
+*   **For Risk 4:** Allocate sufficient time for design, development, and thorough testing of bilingual features. Utilize established libraries/frameworks that support internationalization (i18n) and RTL (e.g., Tailwind CSS RTL support, appropriate date libraries). Consider engaging a UX consultant with Arabic language expertise if needed.
 *   **For Risk 5:** Involve staff representatives in UAT. Provide clear, concise training documentation (in Arabic/English) and hands-on training sessions. Emphasize the efficiency gains and error reduction benefits of centralizing all requests, even those manually entered, into the new system.
 *   **For Risk 6:** Document all critical project information and technical designs. Ghanim Al Marzouqi to prioritize tasks effectively. For critical phases, identify potential backup support or knowledge transfer opportunities if feasible within budget/resource constraints. Open communication with Tasneem Al Shaybia about workload and potential risks.
+*   **For Risk 7:** Thoroughly review Firebase documentation and limitations during the design phase. Implement robust error handling and logging for Firebase interactions. Monitor usage and costs.
 
 ---
 
 ## 10. Glossary
-*(No changes needed here for this update)*
+*   **BRD:** Business Requirements Document
+*   **CRUD:** Create, Read, Update, Delete
+*   **CSRF:** Cross-Site Request Forgery
+*   **DM:** Direct Message (typically on social media platforms like Instagram)
+*   **i18n:** Internationalization (designing software to be adaptable to various languages and regions)
+*   **KPI:** Key Performance Indicator
+*   **LTR:** Left-to-Right (text direction, e.g., for English)
+*   **MVP:** Minimum Viable Product
+*   **OMR:** Omani Rial (currency)
+*   **ORM:** Object-Relational Mapper (e.g., Prisma)
+*   **OWASP:** Open Web Application Security Project
+*   **POS:** Point of Sale
+*   **RPO:** Recovery Point Objective
+*   **RTO:** Recovery Time Objective
+*   **RTL:** Right-to-Left (text direction, e.g., for Arabic)
+*   **SEO:** Search Engine Optimization
+*   **SQLi:** SQL Injection
+*   **UAT:** User Acceptance Testing
+*   **UI:** User Interface
+*   **UID:** User Identifier (often used by authentication systems like Firebase)
+*   **USD:** United States Dollar (currency)
+*   **UX:** User Experience
+*   **XSS:** Cross-Site Scripting
 
 ---
 
 ## 11. Appendices
-*(No changes needed here for this update)*
+*   [Link to UI/UX Wireframes/Mockups - To be added once available]
+*   [Link to User Flow Diagrams - To be added once available]
+*   [Link to Detailed Technical Specification Document - If created separately]
 
 ---
 **Document Approval Signatures (if applicable for formal process):**
@@ -356,5 +433,6 @@ The proposed solution is a dedicated web application for LUXURIOUS BRIDE, design
 *   **Project Owner (Tasneem Al Shaybia):** _________________________ Date: _________
 *   **Project Manager (Ghanim Al Marzouqi):** _________________________ Date: _________
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzI3ODM1MjBdfQ==
+eyJoaXN0b3J5IjpbLTExNjIyODAzMjcsLTE2MzI3ODM1MjBdfQ
+==
 -->
