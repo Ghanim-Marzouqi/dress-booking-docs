@@ -356,5 +356,5 @@ The proposed solution is a dedicated web application for LUXURIOUS BRIDE, design
 *   **Project Owner (Tasneem Al Shaybia):** _________________________ Date: _________
 *   **Project Manager (Ghanim Al Marzouqi):** _________________________ Date: _________
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzI3ODM1MjAsNTA3MTQ4MzQ5XX0=
+eyJoaXN0b3J5IjpbLTE2MzI3ODM1MjBdfQ==
 -->
